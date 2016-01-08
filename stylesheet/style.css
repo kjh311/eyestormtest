@@ -1,0 +1,86 @@
+.arrow{
+  max-width: 15%;
+  background-color: darkgrey;
+}
+body{
+  background-color: white;
+}
+button{
+  margin-bottom: 20px;
+}
+#iconContainer{
+  margin-top: 50px;
+  background-color: rgba(0,0,0,.5);
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /*margin: 0 auto;*/
+  border: solid 5px black;
+  margin-left: 100px;
+  /*visibility: hidden;*/
+  z-index: 1;
+}
+h2{
+  text-align: center;
+}
+#icons{
+  /*margin: 0 auto;*/
+}
+.icon{
+  margin: 20px;
+  margin-left: 20px;
+  border: solid 2px black;
+  text-align: center;
+  opacity: 1;
+  transition: all 1s;
+}
+/*.icon:hover{
+  border: solid 2px white;
+}*/
+.iconHidden{
+  visibility: hidden;
+
+  /*z-index: -1;*/
+  transition: all 1s;
+}
+.iconLowerOpacity{
+  opacity: 0.0;
+  transition: all 1s;
+}
+#picContainer{
+  /*margin-top: 0px;*/
+  /*display: block;*/
+  /*margin-left: 40%;*/
+  margin-top: 20px;
+  text-align: center;
+  margin-right: -120px;
+}
+#pics{
+  margin: 20px;
+  /*margin-left: 30px;*/
+/*  margin-left: auto;
+  margin-right: auto;*/
+  /*border: solid 2px black;*/
+  /*text-align: center;*/
+}
+.pic{
+  max-width: 20%;
+  position: absolute;
+  border: 5px solid black;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+}
+.picVisible{
+  opacity: 1;
+  transition: all 1s;
+}
+.progress{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tenPercent{
+  width: 10%;
+}
+
