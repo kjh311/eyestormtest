@@ -5,7 +5,7 @@ $( document ).ready(function() {
     $('.icon').on('click', function() {
     clicks++;
     var percent = Math.min(Math.round(clicks / 10 * 100), 100);
-    $('.progress-bar').width(percent + '%').text(percent + '%');
+    $('.progress-bar').width(percent + '%').text(percent + ' pts');
     });
   });
 
@@ -161,6 +161,18 @@ $( document ).ready(function() {
     $("#wayne-icon").addClass( "iconHidden" );
   });
 
-
-
+  $( "#reset" ).click(function() {
+    $(".pic").removeClass( "picVisible" );
+    $(".icon").removeClass( "iconHidden" );
+    $(".icon").removeClass( "iconLowerOpacity" );
+    $('.progress-bar').width(0);
+    $(function() {
+    var clicks = 0;
+    $('.icon').on('click', function() {
+    clicks++;
+    var percent = Math.min(Math.round(clicks / 10 * 100), 100);
+    $('.progress-bar').width(percent + '%').text(percent + ' pts');
+    });
+  });
+  });
 });
